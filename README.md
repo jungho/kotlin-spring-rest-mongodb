@@ -11,7 +11,7 @@ class Post (val id: String, val categories: String, val content: String)
 
 This conciseness, along with the expressiveness of the language through features such as extension functions, lambdas with receivers, infix function calls, etc, results in code that almost reads like English. This, in turn, results in greater productivity and more maintainable code.  That is good for engineers and for business.  We will be adopting Kotlin as the language for the JVM so it is important for people to start getting familiar with it.  
 
-##Note##
+## Note ##
 
 As the application uses OAuth2 authentication with Azure AD and uses Azure CosmoDB MongoDB service for the durable store, you will need to provision these services in your Azure subscription.  Once you do, update the [application-development.yml](./src/main/resources/application-development.yml) config file to update the necessary config.
 
