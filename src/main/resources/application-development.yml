@@ -5,9 +5,6 @@ spring:
     mongodb:
       uri: ADD YOUR MONGODB CONN STRING HERE
       database: yaba
-AzureAD:
-  appId: Add the application ID in Azure AD
-  identityMetaData: https://login.microsoftonline.com/ADD YOUR AD TENANT NAME.onmicrosoft.com/v2.0/.well-known/openid-configuration
 logging:
   level:
     root: WARN

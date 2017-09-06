@@ -13,7 +13,7 @@ This conciseness, along with the expressiveness of the language through features
 
 ## Note ##
 
-As the application uses OAuth2 authentication with Azure AD and uses Azure CosmoDB MongoDB service for the durable store, you will need to provision these services in your Azure subscription.  Once you do, update the [application-development.yml](./src/main/resources/application-development.yml) config file to update the necessary config.
+The application uses MongoDB for the database.  You will need to create an instance (You can use Azure CosmoDB).  Once you do, update the [application-development.yml](./src/main/resources/application-development.yml) config file to update the necessary config.
 
 ## References ##
 
