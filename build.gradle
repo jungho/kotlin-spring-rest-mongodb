@@ -1,0 +1,44 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.1.2'
+    id 'org.jetbrains.kotlin.plugin.spring' version '1.1.2'
+    id 'org.springframework.boot' version '1.5.2.RELEASE'
+}
+
+ext {
+    jvmTarget = 1.8
+}
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = jvmTarget
+compileKotlin {
+    kotlinOptions.jvmTarget = "$jvmTarget"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "$jvmTarget"
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile(
+            // Kotlin
+            "org.jetbrains.kotlin:kotlin-stdlib-jre8",
+            "org.jetbrains.kotlin:kotlin-reflect",
+
+            // Spring Boot
+            //'org.springframework.boot:spring-boot-starter-security',
+            //'org.springframework.security.oauth:spring-security-oauth2',
+            'org.springframework.boot:spring-boot-starter-web',
+            'org.springframework.boot:spring-boot-starter-data-mongodb',
+
+            // Database
+            'org.mongodb:mongodb-driver:3.4.2'
+    )
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+
+    runtime 'org.springframework.boot:spring-boot-devtools'
+}
